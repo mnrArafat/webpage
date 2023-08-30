@@ -3,52 +3,113 @@
   <head>
     <title>Arafat's Page</title>
 <style>
-.container {
-  width: 100%;
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.left-div {
-  float: left;
-  width: 50%;
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
 }
 
-.right-div {
-  float: right;
-  width: 50%;
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
 }
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
 </style>	  
 	  <link rel="icon" type="image/png" href="https://wallpaperaccess.com/full/84977.png">
   </head>
-  <body>
-   <div style="width: 1300px; height:250px; border: 1px solid black; padding: 10px;margin:10px;">
-
-      <i><b>My first webpage</b></i><hr>
-	  <h3>Headings are good to see</h3>
-	  <p style="font-family:arial; font-size:20px;">This is my first paragraph in <span style="color:blue">web page</span>. i am so exited.<br>
-	  <span style="color:green">This is going to be great</span>
-	  </p>
-	  <h2>Web pages are exciting too.</h2>
-	  <p><span style="color:red">Web pages can be a lot of fun.</span> Learning how to creat web pages is cany and entertaing
-	  </p>
-	  </div>
-	   <div style="width: 1300px; height:175px; border: 1px solid black; padding: 10px;margin:10px;">
-	  <h1 style="text-align:center"><u>Bio</u></h1>
-      <b><i>Name:MD.Naim Rahman Arafat</i></b><br>
-      <i>College:Government Hazi Muhammad Mohsin College, Chattogram</i><br>
-      <u>Address: Navy colony 1,Ctg.</u><br>
-      <i>Mobile:<span style="color:red">0123456789</span>,<span style="color:red">0123456789</span></i>
-	  </div>
-      <div style="width:1300px; height:896px; border:1px solid black;padding: 10px; margin:10px; "> 
-	  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bachalpsee_reflection.jpg/1920px-Bachalpsee_reflection.jpg" width="300" height="150"><hr>
-	<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Lake_mapourika_NZ.jpeg/1920px-Lake_mapourika_NZ.jpeg" width="500" height="500"></center><hr>
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/400px-Shaqi_jrvej.jpg" width="320" height="200" align="right">
-	  </div>
-	  <div class="container">
-  <div class="left-div"> <div style="width: 500px; height:250px; border: 1px solid black; padding: 10px;margin:10px;"> <a href="http://www.google.com">www.google.com</a><br>
-	     <a href="https://www.facebook.com">www.facebook.com</a><br>
-	     <a href="http://www.youtube.com">www.youtube.com</a><br>
-	     <a href="apple.htm">Apple</a></div></div>
-  <div class="right-div"> <div style="width:500px; height:250px; border: 1px solid black; padding: 10px;margin:10px;"><b>Apple</b> is a glorious technological brand of the prent world.<center><a href="http://www.apple.com"><img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" width="200" height="200"></a></center></div></div>
-</div>	
-</body>
+  <body><center>
+ <p> Click the below button to download the App </p>
+      <a href = "Arafat's app.exe" Download = "test_image">
+        <button class="button-49" role="button">Download</button>
+      </a>
+	  
+  </center>
+  </body>
 </html>
